@@ -1,0 +1,189 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6eee4;
+    color: #2a1f14;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+header {
+    background-color: #2a1f14;
+    color: #f6eee4;
+    padding: 2%;
+    text-align: center;
+}
+
+nav {
+    background-color: #4a362e;
+    padding: 1%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 1%;
+}
+
+nav li a {
+    color: #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav li a:hover {
+    color: #d4b996;
+}
+
+main {
+    padding: 2%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+footer {
+    background-color: #2a1f14;
+    color: #f6eee4;
+    text-align: center;
+    padding: 1%;
+    margin-top: 2%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1% auto;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rules to show mobile class and hide tab-desk class */
+.mobile {
+    display: block;
+}
+
+.tab-desk {
+    display: none;
+}
+
+/* Style rules for header area */
+.mobile h1, .mobile h3 {
+    padding: 2%;
+    text-align: center;
+}
+
+.mobile h1 {
+    font-family: 'Emblema One', cursive;
+    font-size: 2em;
+}
+
+.mobile h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.2em;
+}
+
+main {
+    font-family: 'Lora', serif;
+}
+
+/* Updated nav rules for mobile */
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: block;
+    border-top: 0.5px solid #f6eee4;
+    padding: 10px 0;
+}
+
+nav li a {
+    display: block;
+    padding: 10px;
+}
+
+/* Action style rule */
+.action {
+    font-weight: bold;
+    color: #8b5a2b;
+    text-decoration: underline;
+}
+
+.round {
+    border-radius: 6px;
+}
+
+#info ul {
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#contact {
+    text-align: center;
+}
+
+.tel-link {
+    background-color: #2a1f14;
+    padding: 2%;
+    width: 80%;
+    margin: 0 auto 2%;
+    border-radius: 6px;
+}
+
+.tel-link a {
+    color: #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-email {
+    color: #2a1f14;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-email:hover {
+    text-decoration: underline;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+    
+    .tab-desk {
+        display: block;
+    }
+    
+    nav li {
+        display: inline-block;
+        border: none;
+        padding: 0;
+        margin: 0 2%;
+    }
+    
+    nav li a {
+        display: inline-block;
+        padding: 10px 20px;
+    }
+    
+    header .tab-desk img {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+}
